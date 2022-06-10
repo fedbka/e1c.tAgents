@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Page name="СтраницаИнициализация" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница инициализация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница инициализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаИнициализацияРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаДлительнаяОперация" id="49">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка длительная операция</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.gif</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаДлительнаяОперацияКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="КартинкаДлительнаяОперацияРасширеннаяПодсказка" id="51"/>
+						</PictureDecoration>
+						<LabelDecoration name="НадписьИнициализация" id="52">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пожалуйста, ждите...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИнициализацияКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="НадписьИнициализацияРасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВводТелефонногоНомера" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод телефонного номера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод телефонного номера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВводТелефонногоНомераРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="НомерТелефона" id="35">
+							<DataPath>НомерТелефона</DataPath>
+							<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<Button name="ОтправитьЗапросКодаПодтверждения" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьЗапросКодаПодтверждения</CommandName>
+							<ExtendedTooltip name="ОтправитьЗапросКодаПодтвержденияРасширеннаяПодсказка" id="42"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВводКодаАвторизации" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод кода авторизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод кода авторизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВводКодаАвторизацииРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="КодАвторизации" id="38">
+							<DataPath>КодАвторизации</DataPath>
+							<ContextMenu name="КодАвторизацииКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="КодАвторизацииРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<Button name="ОтправитьПолученныйКодАвторизации" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьПолученныйКодАвторизации</CommandName>
+							<ExtendedTooltip name="ОтправитьПолученныйКодАвторизацииРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКонсоль" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница консоль</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница консоль</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКонсольРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПараметрыЗапроса" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры запроса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры запроса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаПараметрыЗапросаРасширеннаяПодсказка" id="2"/>
+							<ChildItems>
+								<Table name="ПараметрыЗапроса" id="3">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ПараметрыЗапроса</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПараметрыЗапросаКонтекстноеМеню" id="4"/>
+									<AutoCommandBar name="ПараметрыЗапросаКоманднаяПанель" id="5">
+										<ChildItems>
+											<Button name="ОтправитьЗапросКонсоли" id="45">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОтправитьЗапросКонсоли</CommandName>
+												<ExtendedTooltip name="ОтправитьЗапросКонсолиРасширеннаяПодсказка" id="46"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="6"/>
+									<SearchStringAddition name="ПараметрыЗапросаСтрокаПоиска" id="7">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаСтрокаПоискаКонтекстноеМеню" id="8"/>
+										<ExtendedTooltip name="ПараметрыЗапросаСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПараметрыЗапросаСостояниеПросмотра" id="10">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаСостояниеПросмотраКонтекстноеМеню" id="11"/>
+										<ExtendedTooltip name="ПараметрыЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПараметрыЗапросаУправлениеПоиском" id="13">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаУправлениеПоискомКонтекстноеМеню" id="14"/>
+										<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ПараметрыЗапросаПараметр" id="16">
+											<DataPath>ПараметрыЗапроса.Параметр</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыЗапросаПараметрКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ПараметрыЗапросаПараметрРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<InputField name="ПараметрыЗапросаЗначение" id="19">
+											<DataPath>ПараметрыЗапроса.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="21"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЖурналВыполнения" id="22">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Журнал выполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа журнал выполнения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаЖурналВыполненияРасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<TextDocumentField name="ЖурналВыполнениеЗапроса" id="24">
+									<DataPath>ЖурналВыполнениеЗапроса</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ЖурналВыполнениеЗапросаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ЖурналВыполнениеЗапросаРасширеннаяПодсказка" id="26"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольАгента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПараметрыЗапроса" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Параметр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЖурналВыполнениеЗапроса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал выполнение запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерТелефона" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер телефона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодАвторизации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтправитьЗапросКодаПодтверждения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос кода подтверждения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос кода подтверждения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьЗапросКодаПодтверждения</Action>
+		</Command>
+		<Command name="ОтправитьПолученныйКодАвторизации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить полученный код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить полученный код авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПолученныйКодАвторизации</Action>
+		</Command>
+		<Command name="ОтправитьЗапросКонсоли" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос консоли</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос консоли</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьЗапросКонсоли</Action>
+		</Command>
+	</Commands>
+</Form>
