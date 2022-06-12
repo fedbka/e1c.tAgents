@@ -342,11 +342,11 @@
 			</Resource>
 			<Attribute uuid="7ba72f73-451d-4453-a1d9-71b0b15a7d54">
 				<Properties>
-					<Name>ТелоЗапроса</Name>
+					<Name>СодержаниеЗапросаJSON</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тело запроса</v8:content>
+							<v8:content>Содержание запроса JSON</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -514,11 +514,11 @@
 			</Attribute>
 			<Attribute uuid="1d8240fc-f95b-4b48-a97d-f93a1aa49ef0">
 				<Properties>
-					<Name>ТелоОтвета</Name>
+					<Name>СодержаниеОтветаJSON</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тело ответа</v8:content>
+							<v8:content>Содержание ответа JSON</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -557,11 +557,11 @@
 			</Attribute>
 			<Attribute uuid="02890efe-c2ee-436a-968d-fc32f8a34185">
 				<Properties>
-					<Name>ДатаОтвета</Name>
+					<Name>ДатаПолученияОтвета</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата ответа</v8:content>
+							<v8:content>Дата получения ответа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

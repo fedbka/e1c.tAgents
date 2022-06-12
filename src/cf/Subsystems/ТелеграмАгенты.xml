@@ -15,16 +15,16 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture>
-				<xr:Ref>0:6cb136cd-dc5c-4d85-8a0d-70b9f8bf70d5</xr:Ref>
+				<xr:Ref>StdPicture.CollaborationSystemUser</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгенты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">111305f1-8f11-4562-8920-557e5da345e7</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыHTTPЗапросы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТелеграмАгентыHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Администрирование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
@@ -35,10 +35,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелеграмКонтакты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелеграмЧаты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольАгента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИсполнительЗапросовКАгентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">bea02da6-cec1-4204-8cc3-c3e598f5338c</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗапросыИОтветыТелеграмАгентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗапросыTelegramNative</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветыTelegramNative</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТелеграмАгент</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

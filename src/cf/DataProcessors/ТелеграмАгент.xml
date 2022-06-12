@@ -1,36 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
-	<DataProcessor uuid="bea02da6-cec1-4204-8cc3-c3e598f5338c">
+	<DataProcessor uuid="0b64bf24-e532-4444-be22-b1a71a3fc885">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.ИсполнительЗапросовКАгентам" category="Object">
-				<xr:TypeId>c8d1fd90-ae9d-437e-a6d4-da87c18c3fda</xr:TypeId>
-				<xr:ValueId>df39db34-e8f2-4ca4-b21d-7fc963b31990</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorObject.ТелеграмАгент" category="Object">
+				<xr:TypeId>3cba35f1-c737-472c-b36b-2a7bd2c012f0</xr:TypeId>
+				<xr:ValueId>55c0c5b6-f7be-41dc-8815-6cb885e2bce1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.ИсполнительЗапросовКАгентам" category="Manager">
-				<xr:TypeId>0f796e5e-9e61-484b-97a4-6f03ffcea644</xr:TypeId>
-				<xr:ValueId>8467f987-5b8a-428e-bdb7-3bf3455326b7</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorManager.ТелеграмАгент" category="Manager">
+				<xr:TypeId>0b261bfe-b97d-40b2-8d92-15e5c026b34c</xr:TypeId>
+				<xr:ValueId>ef4b2edd-0817-4451-b713-cb7a18d2e99e</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ИсполнительЗапросовКАгентам</Name>
+			<Name>ТелеграмАгент</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Исполнитель запросов к агентам</v8:content>
+					<v8:content>Телеграм агент</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.ИсполнительЗапросовКАгентам.Form.Форма</DefaultForm>
+			<DefaultForm>DataProcessor.ТелеграмАгент.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
-			<Explanation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Анализирует поступившие запросы к агентам и посылает соответствующие команды в Телеграм (через компоненту Telegram.Native)</v8:content>
-				</v8:item>
-			</Explanation>
+			<Explanation/>
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>

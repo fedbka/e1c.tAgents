@@ -237,16 +237,17 @@
 			<CommonTemplate>КомпонентаTelegram</CommonTemplate>
 			<CommonModule>ТелеграмАгенты</CommonModule>
 			<CommonModule>ТелеграмАгентыКлиент</CommonModule>
-			<CommonModule>ТелеграмАгентыСлужебныйКлиент</CommonModule>
 			<CommonModule>ТелеграмАгентыВызовСервера</CommonModule>
 			<CommonModule>ТелеграмАгентыКлиентСервер</CommonModule>
-			<CommonModule>ТелеграмАгентыHTTPЗапросы</CommonModule>
+			<CommonModule>ТелеграмАгентыHTTP</CommonModule>
+			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<HTTPService>telegramAgentsAPI</HTTPService>
 			<Catalog>ТелеграмАгенты</Catalog>
 			<Catalog>ТелеграмКонтакты</Catalog>
 			<Catalog>ТелеграмЧаты</Catalog>
 			<DataProcessor>КонсольАгента</DataProcessor>
-			<DataProcessor>ИсполнительЗапросовКАгентам</DataProcessor>
+			<DataProcessor>ТелеграмАгент</DataProcessor>
 			<InformationRegister>ЗапросыИОтветыТелеграмАгентов</InformationRegister>
 			<InformationRegister>ЗапросыTelegramNative</InformationRegister>
 			<InformationRegister>ОтветыTelegramNative</InformationRegister>

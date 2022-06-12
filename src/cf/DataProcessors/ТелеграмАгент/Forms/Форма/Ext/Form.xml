@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЖурналироватьВсеОтветыTelegramNative" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЖурналироватьВсеОтветыTelegramNative</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаЖурналироватьВсеОтветыTelegramNativeРасширеннаяПодсказка" id="25"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ВыборТелеграмАгента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор телеграм агента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор телеграм агента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВыборТелеграмАгентаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="ТелеграмАгент" id="5">
+							<DataPath>Агент</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите телеграм-агента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ТелеграмАгентКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ТелеграмАгентРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="OnChange">АгентПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ТелеграмАгентНомерТелефона" id="10">
+							<DataPath>АгентНомерТелефона</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер телефона зарегистрированного в Telegram, от имени которого будут выполняться действия в мессенджере</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<ContextMenu name="ТелеграмАгентНомерТелефонаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ТелеграмАгентНомерТелефонаРасширеннаяПодсказка" id="12"/>
+						</LabelField>
+						<LabelField name="ТелеграмАгентРасположениеTDDB" id="13">
+							<DataPath>АгентРасположениеTDDB</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расположение служебных данных агента (базы TDDB). Для повторной полной агента инициализации необходимо удалить указанную папку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Hiperlink>true</Hiperlink>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<ContextMenu name="ТелеграмАгентРасположениеTDDBКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ТелеграмАгентРасположениеTDDBРасширеннаяПодсказка" id="15"/>
+						</LabelField>
+						<Button name="ИнициализироватьАгента" id="8">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.ИнициализироватьАгента</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инициализировать агента &gt;&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ИнициализироватьАгентаРасширеннаяПодсказка" id="9"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ИнициализацияКомпоненты" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инициализация компоненты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инициализация компоненты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИнициализацияКомпонентыРасширеннаяПодсказка" id="17"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаДлительнаяОперация" id="18">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка длительная операция</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.gif</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаДлительнаяОперацияКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="КартинкаДлительнаяОперацияРасширеннаяПодсказка" id="20"/>
+						</PictureDecoration>
+						<LabelDecoration name="НадписьИнициализация" id="21">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инициализация компоненты Telegram.Native</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИнициализацияКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НадписьИнициализацияРасширеннаяПодсказка" id="23"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ВводКодаАвторизации" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод кода авторизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод кода авторизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВводКодаАвторизацииРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<InputField name="АгентКодАвторизации" id="28">
+							<DataPath>АгентКодАвторизации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код авторизации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Введите отправленный в мессенджер Telegram код авторизации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="АгентКодАвторизацииКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="АгентКодАвторизацииРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<Button name="ОтправитьКодАвторизации" id="31">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.ОтправитьКодАвторизации</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправить код авторизации &gt;&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОтправитьКодАвторизацииРасширеннаяПодсказка" id="32"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ОбработкаВнешнихЗапросов" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка внешних запросов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка внешних запросов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОбработкаВнешнихЗапросовРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаЗапросов" id="95">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработка внешних запросов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка запросов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаЗапросовРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<CheckBoxField name="ОбрабатыватьВнешниеЗапросы" id="97">
+									<DataPath>ОбрабатыватьВнешниеЗапросы</DataPath>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="ОбрабатыватьВнешниеЗапросыКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ОбрабатыватьВнешниеЗапросыРасширеннаяПодсказка" id="99"/>
+									<Events>
+										<Event name="OnChange">ОбработкаВнешнихЗапросовВыполняетсяПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ПериодичностьОбработки" id="92">
+									<DataPath>ИнтервалОбработки</DataPath>
+									<SpinButton>true</SpinButton>
+									<MinValue xsi:type="xs:decimal">5</MinValue>
+									<ContextMenu name="ПериодичностьОбработкиКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ПериодичностьОбработкиРасширеннаяПодсказка" id="94"/>
+									<Events>
+										<Event name="OnChange">ПериодичностьОбработкиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="КоличествоОбрабатываемыхЗапросов" id="100">
+									<DataPath>КоличествоОбрабатываемыхЗапросов</DataPath>
+									<SpinButton>true</SpinButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<ContextMenu name="КоличествоОбрабатываемыхЗапросовКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="КоличествоОбрабатываемыхЗапросовРасширеннаяПодсказка" id="102"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ЗапросыТелеграмАгентам" id="35">
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ЗапросыТелеграмАгентам</DataPath>
+							<RowPictureDataPath>ЗапросыТелеграмАгентам.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ЗапросыТелеграмАгентамКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="ЗапросыТелеграмАгентамКоманднаяПанель" id="37"/>
+							<ExtendedTooltip name="ЗапросыТелеграмАгентамРасширеннаяПодсказка" id="38"/>
+							<SearchStringAddition name="ЗапросыТелеграмАгентамСтрокаПоиска" id="39">
+								<AdditionSource>
+									<Item>ЗапросыТелеграмАгентам</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗапросыТелеграмАгентамСтрокаПоискаКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ЗапросыТелеграмАгентамСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗапросыТелеграмАгентамСостояниеПросмотра" id="42">
+								<AdditionSource>
+									<Item>ЗапросыТелеграмАгентам</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗапросыТелеграмАгентамСостояниеПросмотраКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ЗапросыТелеграмАгентамСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗапросыТелеграмАгентамУправлениеПоиском" id="45">
+								<AdditionSource>
+									<Item>ЗапросыТелеграмАгентам</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗапросыТелеграмАгентамУправлениеПоискомКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ЗапросыТелеграмАгентамУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗапросыТелеграмАгентамПериод" id="75">
+									<DataPath>ЗапросыТелеграмАгентам.Период</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамПериодКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамПериодРасширеннаяПодсказка" id="77"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамИдентификатор" id="60">
+									<DataPath>ЗапросыТелеграмАгентам.Идентификатор</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамИдентификаторКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамИдентификаторРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамАгент" id="48">
+									<DataPath>ЗапросыТелеграмАгентам.Агент</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамАгентКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамАгентРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамКоманда" id="63">
+									<DataPath>ЗапросыТелеграмАгентам.Команда</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамКомандаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамКомандаРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамСтатус" id="78">
+									<DataPath>ЗапросыТелеграмАгентам.Статус</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамСтатусКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамСтатусРасширеннаяПодсказка" id="80"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамСодержаниеЗапроса" id="81">
+									<DataPath>ЗапросыТелеграмАгентам.СодержаниеЗапросаJSON</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамСодержаниеЗапросаКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамСодержаниеЗапросаРасширеннаяПодсказка" id="83"/>
+								</LabelField>
+								<CheckBoxField name="ЗапросыТелеграмАгентамОбработан" id="66">
+									<DataPath>ЗапросыТелеграмАгентам.Обработан</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапросыТелеграмАгентамОбработанКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамОбработанРасширеннаяПодсказка" id="68"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЗапросыТелеграмАгентамЕстьОшибка" id="57">
+									<DataPath>ЗапросыТелеграмАгентам.ЕстьОшибка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапросыТелеграмАгентамЕстьОшибкаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамЕстьОшибкаРасширеннаяПодсказка" id="59"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЗапросыТелеграмАгентамОтветПолучен" id="72">
+									<DataPath>ЗапросыТелеграмАгентам.ОтветПолучен</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапросыТелеграмАгентамОтветПолученКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамОтветПолученРасширеннаяПодсказка" id="74"/>
+								</CheckBoxField>
+								<LabelField name="ЗапросыТелеграмАгентамСодержаниеОтветаJSON" id="84">
+									<DataPath>ЗапросыТелеграмАгентам.СодержаниеОтветаJSON</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамСодержаниеОтветаJSONКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамСодержаниеОтветаJSONРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамДатаПолученияОтвета" id="54">
+									<DataPath>ЗапросыТелеграмАгентам.ДатаПолученияОтвета</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамДатаПолученияОтветаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамДатаПолученияОтветаРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамДатаОбработки" id="51">
+									<DataPath>ЗапросыТелеграмАгентам.ДатаОбработки</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамДатаОбработкиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамДатаОбработкиРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<LabelField name="ЗапросыТелеграмАгентамОписаниеОшибки" id="69">
+									<DataPath>ЗапросыТелеграмАгентам.ОписаниеОшибки</DataPath>
+									<ContextMenu name="ЗапросыТелеграмАгентамОписаниеОшибкиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ЗапросыТелеграмАгентамОписаниеОшибкиРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТелеграмАгент</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Агент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТелеграмАгенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентНомерТелефона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер телефона агента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентРасположениеTDDB" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расположение служебных данных агента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентКод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код агента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЖурналироватьВсеОтветыTelegramNative" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журналировать все ответы telegram native</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентКодАвторизации" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапросыТелеграмАгентам" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросы телеграм агентам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЗапросыИОтветыТелеграмАгентов.Период КАК Период,
+	ЗапросыИОтветыТелеграмАгентов.Агент КАК Агент,
+	ЗапросыИОтветыТелеграмАгентов.Идентификатор КАК Идентификатор,
+	ЗапросыИОтветыТелеграмАгентов.ЕстьОшибка КАК ЕстьОшибка,
+	ЗапросыИОтветыТелеграмАгентов.Обработан КАК Обработан,
+	ЗапросыИОтветыТелеграмАгентов.Статус КАК Статус,
+	ЗапросыИОтветыТелеграмАгентов.ОтветПолучен КАК ОтветПолучен,
+	ЗапросыИОтветыТелеграмАгентов.СодержаниеЗапросаJSON КАК СодержаниеЗапросаJSON,
+	ЗапросыИОтветыТелеграмАгентов.Команда КАК Команда,
+	ЗапросыИОтветыТелеграмАгентов.ДатаОбработки КАК ДатаОбработки,
+	ЗапросыИОтветыТелеграмАгентов.ОписаниеОшибки КАК ОписаниеОшибки,
+	ЗапросыИОтветыТелеграмАгентов.СодержаниеОтветаJSON КАК СодержаниеОтветаJSON,
+	ЗапросыИОтветыТелеграмАгентов.ДатаПолученияОтвета КАК ДатаПолученияОтвета
+ИЗ
+	РегистрСведений.ЗапросыИОтветыТелеграмАгентов КАК ЗапросыИОтветыТелеграмАгентов
+ГДЕ
+	(НЕ ЗапросыИОтветыТелеграмАгентов.ОтветПолучен
+			ИЛИ НЕ ЗапросыИОтветыТелеграмАгентов.Обработан
+			ИЛИ ЗапросыИОтветыТелеграмАгентов.ЕстьОшибка)</QueryText>
+				<MainTable>InformationRegister.ЗапросыИОтветыТелеграмАгентов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="АгентНаименование" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбрабатыватьВнешниеЗапросы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать внешние запросы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнтервалОбработки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>интервал обработки (в секундах)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоОбрабатываемыхЗапросов" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество запросов (за раз)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТелеграмАгентНомерТелефона</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">АгентНомерТелефона</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:TextFont" bold="false" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt; Не указан &gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТелеграмАгентРасположениеTDDB</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">АгентРасположениеTDDB</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:TextFont" bold="false" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt; Не указан &gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ИнициализироватьАгента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инициализировать агента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инициализировать агента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИнициализироватьАгента</Action>
+		</Command>
+		<Command name="ЖурналироватьВсеОтветыTelegramNative" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журналировать все ответы TelegramNative</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журналировать все ответы telegram native</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЖурналироватьВсеОтветыTelegramNative</Action>
+		</Command>
+		<Command name="ОтправитьКодАвторизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить код авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьКодАвторизации</Action>
+		</Command>
+	</Commands>
+</Form>
