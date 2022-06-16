@@ -257,11 +257,12 @@
 							</ChildItems>
 						</UsualGroup>
 						<Table name="ЗапросыТелеграмАгентам" id="35">
+							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
+							<InitialListView>Beginning</InitialListView>
 							<DataPath>ЗапросыТелеграмАгентам</DataPath>
 							<RowPictureDataPath>ЗапросыТелеграмАгентам.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
@@ -274,7 +275,7 @@
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<RestoreCurrentRow>false</RestoreCurrentRow>
 							<TopLevelParent xsi:nil="true"/>
-							<ShowRoot>true</ShowRoot>
+							<ShowRoot>false</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
 							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
@@ -376,6 +377,54 @@
 								</LabelField>
 							</ChildItems>
 						</Table>
+						<UsualGroup name="ГруппаСодержаниеЗапросаИОтвета" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скрыть содержание ответов и запросов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа содержание запроса и ответа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показать содержание ответов и запросов</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<CurrentRowUse>Use</CurrentRowUse>
+							<AssociatedTableElementId xsi:type="xs:string">ЗапросыТелеграмАгентам</AssociatedTableElementId>
+							<ExtendedTooltip name="ГруппаСодержаниеЗапросаИОтветаРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<InputField name="СодержаниеЗапросаJSON" id="105">
+									<DataPath>Items.ЗапросыТелеграмАгентам.CurrentData.СодержаниеЗапросаJSON</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СодержаниеЗапросаJSONКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="СодержаниеЗапросаJSONРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="СодержаниеОтветаJSON" id="108">
+									<DataPath>Items.ЗапросыТелеграмАгентам.CurrentData.СодержаниеОтветаJSON</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СодержаниеОтветаJSONКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="СодержаниеОтветаJSONРасширеннаяПодсказка" id="110"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 			</ChildItems>
