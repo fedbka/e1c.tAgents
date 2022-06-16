@@ -30,7 +30,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаTelegram</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.telegramAgentsAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.tAgentsAPI</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелеграмАгенты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелеграмКонтакты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелеграмЧаты</xr:Item>

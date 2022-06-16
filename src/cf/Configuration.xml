@@ -242,7 +242,7 @@
 			<CommonModule>ТелеграмАгентыHTTP</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
-			<HTTPService>telegramAgentsAPI</HTTPService>
+			<HTTPService>tAgentsAPI</HTTPService>
 			<Catalog>ТелеграмАгенты</Catalog>
 			<Catalog>ТелеграмКонтакты</Catalog>
 			<Catalog>ТелеграмЧаты</Catalog>
