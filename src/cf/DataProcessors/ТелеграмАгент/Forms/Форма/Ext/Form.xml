@@ -93,6 +93,12 @@
 						</LabelField>
 						<LabelField name="АгентИдентификаторПриложения" id="111">
 							<DataPath>АгентИдентификаторПриложения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор приложения (api_id)</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -107,6 +113,12 @@
 						</LabelField>
 						<LabelField name="АгентХэшПриложения" id="114">
 							<DataPath>АгентХэшПриложения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Хэш приложения (api_hash)</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
